@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <div class="row">
+                <div class="col s6 offset-s3">
+                    <h1 class="title center-align">Hangman</h1>
+                    <h5>Find the hidden word - Enter a letter </h5>
+                    <p id="type"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s6 center-align">
+                    <div>
+                        <svg height="200" width="250" class="figure-container">
+                            <!-- top line -->
+                            <line x1="40" y1="0" x2="120" y2="0"></line>
+                            <!-- right line -->
+                            <line x1="120" y1="0" x2="120" y2="30"></line>
+                            <!-- left line -->
+                            <line x1="40" y1="0" x2="40" y2="200"></line>
+                            <!-- buttom line    -->
+                            <line x1="0" y1="200" x2="80" y2="200"></line>
+
+                            <!-- human -->
+                            <!-- head   -->
+                            <circle cx="120" cy="50" r="20" class="human"></circle>
+                            <!-- body -->
+                            <line x1="120" y1="70" x2="120" y2="140" class="human"></line>
+                            <!-- hand left      -->
+                            <line x1="120" y1="100" x2="100" y2="80" class="human"></line>
+                            <!-- hand right      -->
+                            <line x1="120" y1="100" x2="140" y2="80" class="human"></line>
+
+                            <!-- leg left      -->
+                            <line x1="120" y1="140" x2="100" y2="160" class="human"></line>
+                            <!-- leg right      -->
+                            <line x1="120" y1="140" x2="140" y2="160" class="human"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col s6 center-align">
+                     <h5>wrong word</h5>
+                    <div class="wrong_word"></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col s12 center-align ">
+                    <div class="words">
+                        <!-- tap letters -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" id="m" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Result</h4>
+      <p>You are win</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!"  class="modal-close waves-effect waves-green btn-flat">close</a>
+      <a href="#!" id="play" class="modal-close waves-effect waves-green btn-flat">play again</a>
+    </div>
+  </div>
+          
+
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

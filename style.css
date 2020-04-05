@@ -1,0 +1,27 @@
+body {
+   
+    background-color:#b2dfdb;
+    position: relative;
+}
+.card-panel{
+    color: #fff;
+}
+.figure-container {
+    fill: transparent;
+    stroke: #fff;
+}
+
+.words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.words > *{
+    margin: 0 .3rem;
+    border-bottom:1px solid #000000;
+    font-size: 1.5rem;
+    width: 1rem;
+}
+.human{
+    display: none;
+}
